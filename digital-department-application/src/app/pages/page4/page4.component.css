@@ -1,0 +1,38 @@
+div {
+    font-family: "Rubik Mono One", monospace;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    margin-top: 3%;
+    text-align: left
+}
+
+body {
+    display: flex;
+    background-color: black;
+    margin-left: 20%;
+
+
+}
+
+.container {
+    width: 90%;
+
+}
+
+.card {
+    font-size: small;
+}
+
+a {
+    border-radius: 5px;
+    background-color: rgb(19, 188, 255);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: rgb(38, 0, 255);
+    text-decoration: none;
+
+}

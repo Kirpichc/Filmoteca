@@ -1,0 +1,89 @@
+<body>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://storage.cinemaware.eu/katalogy/images/7/a/7a08d736-c5c6-11ee-9bbd-9e966f951e90.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Дюна: Часть вторая</h5>
+                    <p class="card-text">Герцог Пол Атрейдес присоединяется к фременам, чтобы стать Муад Дибом,
+                        одновременно пытаясь остановить наступление войны. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4483445/0626de3c-b731-4f72-9bd0-906aacc3bbe1/1920x"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Лёд 3</h5>
+                    <p class="card-text">Надя выросла и стала фигуристкой. Она мечтает о «Кубке Льда», как когда-то
+                        мечтала ее мама. Горин возражает против спортивной карьеры дочери — он оберегает ее от любых
+                        трудностей и его можно понять: он потерял слишком много. На тайной тренировке Надя знакомится с
+                        молодым и дерзким хоккеистом из Москвы, и между ними вспыхивает первая любовь. Отец не верит в
+                        искренность чувств юноши и разлучает пару. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/10812607/1820978b-16c9-4767-b96c-16f91bf0844a/1920x"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Артур, ты король</h5>
+                    <p class="card-text">Это было последнее соревнование капитана по приключенческим гонкам Майкла
+                        Линднорда, он был полон решимости ничему не позволить встать у него на пути. Собрав
+                        первоклассную команду, он не мог и представить, что в 700-километровом забеге у них появится
+                        неожиданный попутчик — пес по кличке Артур, встреча с которым изменит не только исход гонки, но
+                        и их жизнь. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/10812607/4ada5ba2-8fe2-4a64-a749-6615b27f5e69/1920x"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Из глубины</h5>
+                    <p class="card-text">Летящий из Лос-Анджелеса на мексиканский курорт самолет терпит крушение над
+                        Тихим океаном. Авиалайнер падает и застревает на дне, несколько выживших оказываются в хвосте в
+                        воздушном кармане, но кислород постепенно заканчивается, а рядом уже кружат кровожадные акулы.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body1">
+        <h3>Если вы уже смотрели данные картины,<br> то можете оставить свой отзыв ниже</h3>
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+            
+            <div>
+                <label>Имяㅤㅤ</label>
+                <input name="userName" formControlName="userName" />
+            </div>
+            <div *ngIf="myForm.controls['userName'].invalid && myForm.controls['userName'].touched">
+                Не указано Имя!
+            </div>
+
+            <div>
+                <label>Коментарийㅤㅤ</label>
+                <input name="otvet" formControlName="otvet" />
+            </div>
+            <div *ngIf="myForm.controls['otvet'].invalid && myForm.controls['otvet'].touched">
+                Укажите ваш коментарий!
+            </div>
+
+            <button type="submit" [disabled]="myForm.invalid">Жмяк</button>
+        </form>
+
+        <div class="body1">
+            <h3>Коментарии</h3>
+            <ul>
+                <li *ngFor="let user of users"> {{user.userName}} :{{user.otvet}}</li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>

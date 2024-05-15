@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    background-color: black;
+    margin-top: 2%;
+    font-family: "Rubik Mono One", monospace;
+
+}
+
+.card {
+    background-color: rgb(48, 48, 48);
+    color: rgb(228, 228, 228);
+    text-align: center;
+    font-size: small;
+    font-family: "Rubik Mono One", monospace;
+
+}
+
+.body1 {
+    padding-top:3% ;
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: "Rubik Mono One", monospace;
+
+
+}

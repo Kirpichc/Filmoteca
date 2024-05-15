@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+}
+
+div {
+  font-family: "Rubik Mono One", monospace;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  margin-top: 3%;
+  text-align: center
+}
+
+.block {
+  width: 1200px;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+.car {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel {
+  width: 600px;
+}
+
+.carousel-inner img {
+  height: auto;
+  border-radius: 30px;
+
+}
+
+.carousel-indicators li {
+  border-color: #000;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+.car2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+img {
+  border-radius: 30px;
+
+}
